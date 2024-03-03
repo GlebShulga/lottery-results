@@ -38,7 +38,7 @@ const Table: FC<TableProps> = ({ rows }) => (
     <thead>
       <tr className="bg-gray-300">
         <th className="text-left pl-2">Categories</th>
-        <th>Number of winners</th>
+        <th>Winners</th>
         <th className="text-right pr-2">Prizes, €</th>
       </tr>
     </thead>

@@ -28,9 +28,7 @@ export default function Home() {
           "selectedNumbers",
           JSON.stringify(selectedNumbers)
         ),
-        console.log("before push"),
-        await router.push("/result");
-      console.log("after push");
+        router.push("/result");
     } catch (error) {
       console.error("Failed to fetch:", error);
     } finally {

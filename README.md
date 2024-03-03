@@ -1,4 +1,11 @@
+# Bonoloto Lottery Checker
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Features
+
+1. Check if your numbers have ever won in the Bonoloto lottery.
+2. Check the latest result of the Bonoloto lottery.
 
 ## Getting Started
 

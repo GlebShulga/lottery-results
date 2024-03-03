@@ -44,8 +44,7 @@ export function Header() {
           isOpen ? "-translate-x-0" : "-translate-x-full"
         }`}
       >
-        <h2 className="text-xl font-bold py-4 px-6">Menu</h2>
-        <ul className="flex flex-col space-y-2 px-6">
+        <ul className="flex flex-col space-y-2 px-6 pt-10">
           <li>
             <Link href="/" className="text-lg font-medium hover:text-lime-600">
               Home
@@ -63,7 +62,7 @@ export function Header() {
         <button
           type="button"
           onClick={handleMenuClick}
-          className="absolute top-4 right-4 p-2 rounded-full"
+          className="absolute top-2 right-4 p-2 rounded-full"
         >
           {" "}
           <Image

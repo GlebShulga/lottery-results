@@ -1,5 +1,10 @@
 "use client";
 import { FC, useState } from "react";
+import {
+  MAX_CHOSEN_NUMBERS,
+  MAX_NUMBER,
+  MIN_NUMBER,
+} from "../constants/common";
 
 interface NumberPickerProps {
   onChange: (value: number[]) => void;
@@ -7,10 +12,6 @@ interface NumberPickerProps {
 
 export const NumberPicker: FC<NumberPickerProps> = ({ onChange }) => {
   const [selectedNumbers, setSelectedNumbers] = useState<number[]>([]);
-
-  const MIN = 1;
-  const MAX = 49;
-  const MAX_CHOSEN_NUMBERS = 6;
 
   const handleNumberClick = (number: number) => {
     if (selectedNumbers.includes(number)) {
@@ -24,7 +25,10 @@ export const NumberPicker: FC<NumberPickerProps> = ({ onChange }) => {
     }
   };
 
-  const numbers = Array.from({ length: MAX - MIN + 1 }, (_, i) => MIN + i);
+  const numbers = Array.from(
+    { length: MAX_NUMBER - MIN_NUMBER + 1 },
+    (_, i) => MIN_NUMBER + i
+  );
 
   return (
     <div className="grid grid-cols-5 gap-1 mb-3 md:mb-0 md:grid-cols-7">
