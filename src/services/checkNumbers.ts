@@ -1,5 +1,9 @@
 export async function checkNumbers(selectedNumbers: number[]) {
-  const response = await fetch("http://localhost:8000/bonoloto", {
+  const apiUrl =
+    (process.env.API_BASIC_URL || process.env.NEXT_PUBLIC_API_BASIC_URL) ??
+    "http://localhost:8000";
+
+  const response = await fetch(apiUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
