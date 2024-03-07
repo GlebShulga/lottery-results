@@ -53,7 +53,7 @@ export default function Result() {
               <LotteryBall key={index} ball={number} index={index} />
             ))}
           </div>
-          didn't win in any draw
+          did not win in any draw
         </div>
       )}
       <button
