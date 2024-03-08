@@ -9,6 +9,7 @@ export const Loading: React.FC = () => {
     "The odds of winning the jackpot is 1 in 13,983,816.",
     "The largest Bonoloto jackpot of €10,614,853 was won on January 17, 2024",
     "For prizes below €40,000, no tax is withheld.",
+    "Your numbers haven't won in the 21st century. Let's check further",
     "Bonoloto is one of the most popular lottery in Spain",
     "We have almost finished checking your numbers.",
     "Remember, gambling should be for entertainment and not as a way to make money.",
