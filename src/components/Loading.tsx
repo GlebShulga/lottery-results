@@ -32,7 +32,7 @@ export const Loading: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-screen overflow-clip flex flex-col items-center justify-center h-screen w-screen text-center">
+    <div className="h-screen w-screen overflow-clip flex flex-col items-center justify-center text-center">
       <div role="status">
         <Spinner />
       </div>
