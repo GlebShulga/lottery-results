@@ -9,6 +9,10 @@ class MyDocument extends Document {
             name="description"
             content="Check if your favorite numbers have ever won in the Bonoloto lottery"
           />
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="default-src 'self'; img-src *; child-src 'none';"
+          />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
