@@ -19,12 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; img-src *; child-src 'none';"
-        />
-      </head>
       <body className={`{inter.className} md:h-screen md:overflow-clip`}>
         <Header />
         {children}
